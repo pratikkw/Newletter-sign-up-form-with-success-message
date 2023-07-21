@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Newsletter sign-up form with success message</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="cta">
+        <div class="img__box">
+          <picture>
+            <source
+              srcset="assets/images/illustration-sign-up-desktop.svg"
+              media="(min-width: 600px)"
+            />
+            <img
+              src="assets/images/illustration-sign-up-mobile.svg"
+              alt="Data"
+            />
+          </picture>
+        </div>
+
+        <div class="detail">
+          <h1 class="primary-heading">Stay updated!</h1>
+          <p class="para">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+
+          <ul class="mg-bottom-medium">
+            <li class="detail__list">
+              <img src="assets/images/icon-list.svg" alt="Check" />
+              <p>Product discovery and building what matters</p>
+            </li>
+
+            <li class="detail__list">
+              <img src="assets/images/icon-list.svg" alt="Check" />
+              <p>Measuring to ensure updates are a success</p>
+            </li>
+
+            <li class="detail__list">
+              <img src="assets/images/icon-list.svg" alt="Check" />
+              <p>And much more!</p>
+            </li>
+          </ul>
+
+          <div class="email">
+            <div class="email__box mg-bottom-medium-2">
+              <div class="label__box mg-bottom-small">
+                <label for="email">Email address</label>
+                <label for="email" class="label-2">Valid email required</label>
+              </div>
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="email@company.com"
+                required
+              />
+            </div>
+
+            <button class="btn">Subscribe to monthly newsletter</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="thank-you">
+        <div class="img__success">
+          <img src="assets/images/icon-success.svg" alt="Success" />
+        </div>
+
+        <h2 class="primary-heading">Thanks for subscribing!</h2>
+
+        <p class="para">
+          A confirmation email has been sent to
+          <span class="user-email">ash@loremcompany.com</span> Please open it
+          and click the button inside to comfirm your subscription
+        </p>
+
+        <button class="btn btn-2">Dismiss message</button>
+      </section>
+    </main>
+  </body>
+
+  <script defer src="JS/script.js"></script>
+</html>
